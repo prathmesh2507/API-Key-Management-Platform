@@ -80,6 +80,11 @@ devgate/
 ---
 
 ## 📸 Screenshots
+---
+### Dashboard
+![alt text](assets/dashboard.png)
+
+### Architecture Overview
 ![alt text](assets/architecture_overview.png)
 
 ---
