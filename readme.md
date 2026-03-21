@@ -80,7 +80,7 @@ devgate/
 ---
 
 ## 📸 Screenshots
-![alt text](assets/architecture overview.png)
+![alt text](assets/architecture_overview.png)
 
 ---
 
