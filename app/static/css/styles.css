@@ -1,0 +1,441 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.auth-container {
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 40px;
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    color: #fff;
+}
+
+.auth-card h1 {
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 14px;
+    margin-bottom: 30px;
+    opacity: 0.7;
+}
+
+form input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+}
+
+form button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    background: #6366f1;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background: #4f46e5;
+}
+
+.switch {
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.switch a {
+    color: #6366f1;
+    text-decoration: none;
+}
+
+.error {
+    color: #ff4d4d;
+    margin-top: 10px;
+}
+
+/* ================= PREMIUM STARTUP DASHBOARD ================= */
+
+body {
+    font-family: 'Inter', sans-serif;
+    background: radial-gradient(circle at 20% 20%, #1e293b, #0f172a 60%);
+}
+
+/* Layout */
+
+.dashboard-wrapper {
+    padding: 60px 0 80px;
+}
+
+.dashboard-container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 0 24px;
+    color: #f8fafc;
+}
+
+/* Header */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: 600;
+    letter-spacing: -0.5px;
+}
+
+.logout-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.15);
+    padding: 10px 18px;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.logout-btn:hover {
+    background: rgba(255,255,255,0.15);
+}
+
+/* Analytics Grid */
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-bottom: 60px;
+}
+
+.card {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 18px;
+    padding: 28px;
+    backdrop-filter: blur(20px);
+    transition: 0.25s ease;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(99,102,241,0.4);
+    box-shadow: 0 20px 60px rgba(0,0,0,0.4);
+}
+
+.card h3 {
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 14px;
+}
+
+.card p {
+    font-size: 34px;
+    font-weight: 700;
+    letter-spacing: -1px;
+}
+
+/* Keys Section */
+
+.keys-section {
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.08);
+    border-radius: 22px;
+    padding: 40px;
+    backdrop-filter: blur(20px);
+}
+
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-header h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.primary-btn {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    padding: 12px 20px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.primary-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(99,102,241,0.4);
+}
+
+/* Table */
+
+.keys-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.keys-table th {
+    text-align: left;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    opacity: 0.5;
+    padding-bottom: 18px;
+}
+
+.keys-table td {
+    padding: 20px 0;
+    font-size: 14px;
+    border-top: 1px solid rgba(255,255,255,0.06);
+}
+
+.keys-table tr {
+    transition: 0.2s ease;
+}
+
+.keys-table tr:hover {
+    background: rgba(255,255,255,0.03);
+}
+
+/* Status Pills */
+
+.status-active {
+    background: rgba(34,197,94,0.15);
+    color: #22c55e;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.status-revoked {
+    background: rgba(239,68,68,0.15);
+    color: #ef4444;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+/* Action Buttons */
+
+.keys-table button {
+    background: transparent;
+    border: 1px solid rgba(255,255,255,0.15);
+    color: #e2e8f0;
+    padding: 6px 14px;
+    border-radius: 10px;
+    cursor: pointer;
+    margin-right: 8px;
+    transition: 0.2s ease;
+}
+
+.keys-table button:hover {
+    border-color: #6366f1;
+    color: #fff;
+}
+
+/* ================= MODAL ================= */
+
+.modal-overlay.hidden {
+    display: none !important;
+}
+
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(8px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal {
+    background: rgba(255,255,255,0.05);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 24px;
+    padding: 40px;
+    width: 450px;
+    backdrop-filter: blur(20px);
+    animation: modalFade 0.25s ease forwards;
+}
+
+@keyframes modalFade {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.modal-header h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.close-btn {
+    background: transparent;
+    border: none;
+    font-size: 22px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.modal-form input {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+    background: rgba(255,255,255,0.05);
+    color: #fff;
+    outline: none;
+}
+
+.modal-form input:focus {
+    border-color: #6366f1;
+}
+
+.full-width {
+    width: 100%;
+}
+
+/* Generated Key */
+
+.generated-key {
+    margin-top: 25px;
+}
+
+.generated-key p {
+    font-size: 13px;
+    margin-bottom: 10px;
+    opacity: 0.7;
+}
+
+.key-display {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(255,255,255,0.05);
+    padding: 12px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.1);
+}
+
+.key-display span {
+    font-size: 12px;
+    word-break: break-all;
+}
+
+.key-display button {
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    padding: 6px 14px;
+    border-radius: 8px;
+    color: white;
+    cursor: pointer;
+}
+
+.success-warning {
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: 18px;
+}
+
+.danger-text {
+    color: #ef4444;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.danger-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border: none;
+    padding: 12px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.danger-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(239,68,68,0.4);
+}
+
+.secondary-btn {
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.2);
+    padding: 12px;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
+}
+
+.logout-btn {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 12px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.25s ease;
+}
+
+.logout-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(239,68,68,0.4);
+}

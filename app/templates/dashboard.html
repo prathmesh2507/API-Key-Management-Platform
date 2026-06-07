@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>DevGate Dashboard</title>
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/styles.css') }}"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="dashboard-wrapper">
+      <div class="dashboard-container">
+        <!-- NAVBAR -->
+        <nav class="navbar">
+          <div class="logo">DevGate</div>
+          <button id="logoutBtn" class="logout-btn">Logout</button>
+        </nav>
+
+        <!-- ANALYTICS CARDS -->
+        <div class="analytics-grid">
+          <div class="card">
+            <h3>Total API Calls</h3>
+            <p id="totalCalls">0</p>
+          </div>
+
+          <div class="card">
+            <h3>Calls (Last 24h)</h3>
+            <p id="calls24h">0</p>
+          </div>
+
+          <div class="card">
+            <h3>Most Used Endpoint</h3>
+            <p id="mostUsed">-</p>
+          </div>
+
+          <div class="card">
+            <h3>Active Keys</h3>
+            <p id="activeKeys">0</p>
+          </div>
+        </div>
+
+        <!-- API KEYS SECTION -->
+        <div class="keys-section">
+          <div class="section-header">
+            <h2>Your API Keys</h2>
+            <button id="createKeyBtn" class="primary-btn">+ Create Key</button>
+          </div>
+
+          <table class="keys-table">
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Created</th>
+                <th>Expires</th>
+                <th>Status</th>
+                <th>Rate Limit</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody id="keysTableBody">
+              <!-- JS will inject rows -->
+            </tbody>
+          </table>
+        </div>
+        <!-- CREATE KEY MODAL -->
+        <div id="modalOverlay" class="modal-overlay hidden">
+          <div class="modal">
+            <div class="modal-header">
+              <h2>Create New API Key</h2>
+              <button id="closeModalBtn" class="close-btn">&times;</button>
+            </div>
+
+            <form id="createKeyForm" class="modal-form">
+              <input type="text" id="keyName" placeholder="Key Name" required />
+              <input
+                type="number"
+                id="expiresDays"
+                placeholder="Expires in Days (default 30)"
+              />
+              <input
+                type="number"
+                id="rateLimit"
+                placeholder="Rate Limit per Minute (default 60)"
+              />
+
+              <button type="submit" class="primary-btn full-width">
+                Generate Key
+              </button>
+            </form>
+          </div>
+        </div>
+        <!-- SUCCESS KEY MODAL -->
+        <div id="successModal" class="modal-overlay hidden">
+          <div class="modal">
+            <div class="modal-header">
+              <h2>API Key Generated</h2>
+              <button id="closeSuccessBtn" class="close-btn">&times;</button>
+            </div>
+
+            <p class="success-warning">
+              This key will only be shown once. Please save it securely.
+            </p>
+
+            <div class="key-display">
+              <span id="successKeyText"></span>
+              <button id="copySuccessBtn">Copy</button>
+            </div>
+
+            <button
+              id="doneBtn"
+              class="primary-btn full-width"
+              style="margin-top: 20px"
+            >
+              Done
+            </button>
+          </div>
+        </div>
+        <!-- REVOKE CONFIRM MODAL -->
+<div id="revokeModal" class="modal-overlay hidden">
+    <div class="modal">
+
+        <div class="modal-header">
+            <h2>Revoke API Key</h2>
+            <button id="closeRevokeBtn" class="close-btn">&times;</button>
+        </div>
+
+        <p class="danger-text">
+            This action cannot be undone.
+        </p>
+
+        <p style="opacity:0.7; margin-bottom:20px;">
+            Once revoked, this API key will permanently stop working.
+        </p>
+
+        <div style="display:flex; gap:12px;">
+            <button id="cancelRevokeBtn" class="secondary-btn full-width">
+                Cancel
+            </button>
+            <button id="confirmRevokeBtn" class="danger-btn full-width">
+                Revoke Key
+            </button>
+        </div>
+
+    </div>
+</div>
+
+      </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/dashboard.js') }}"></script>
+  </body>
+</html>

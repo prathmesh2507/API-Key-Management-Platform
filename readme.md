@@ -80,16 +80,11 @@ devgate/
 ---
 
 ## 📸 Screenshots
----
-### Dashboard
-![alt text](assets/dashboard.png)
-
-### Architecture Overview
-![alt text](assets/architecture_overview.png)
+![alt text](assets/screenshot.png)
 
 ---
 
-## 🧠 Engineering Highlights
+##🧠 Engineering Highlights
 -Secure key lifecycle design (revoke-only policy)
 -Clean separation using Blueprints
 -ISO datetime serialization for frontend safety
@@ -98,6 +93,15 @@ devgate/
 
 ---
 
+## 🔗 Part of a Larger Project Sprint
+- This project is part of my 90 Days • 30 Mini Projects journey —focused on building real, usable software instead of toy examples.
+
+---
+
+## 👉 Main Index Repository
+- 🔗 https://github.com/prathmesh2507/90-days-30-mini-projects
+
+---
 
 ## 🤝 Contributing
 - Suggestions and improvements are always welcome 🙌
