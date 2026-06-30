@@ -109,8 +109,3 @@ devgate/
 - 💻 **GitHub**: https://github.com/prathmesh2507
 - 💻 **Linkedin**: https://linkedin.com/in/prathmesh-bhoyar-24b0b0310
 
----
-
-## ⭐ Support
-- If you found this project useful, consider giving it a star ⭐ —it really helps and motivates me to keep building!
->>>>>>> cbcd26ff29da3b18e0832fa2f29c75ca9b12124b
