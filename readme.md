@@ -103,9 +103,3 @@ devgate/
 - Suggestions and improvements are always welcome 🙌
 - Feel free to fork the repository or open an issue for enhancements or bug fixes.
 
----
-
-## 📫 Connect With Me
-- 💻 **GitHub**: https://github.com/prathmesh2507
-- 💻 **Linkedin**: https://linkedin.com/in/prathmesh-bhoyar-24b0b0310
-
