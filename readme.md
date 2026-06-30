@@ -46,21 +46,3 @@ It demonstrates practical backend engineering concepts used in real API platform
 
 ---
 
-## 📂 Project Structure
-
-```text
-devgate/
-│
-├── app/
-│   ├── routes/
-│   ├── models/
-│   ├── templates/
-│   ├── static/
-│   └── __init__.py
-│
-├── run.py
-├── requirements.txt
-└── README.md
-```
-
----
