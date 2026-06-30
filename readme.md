@@ -88,13 +88,3 @@ devgate/
 ### Architecture Overview
 ![alt text](assets/architecture_overview.png)
 
----
-
-## 🧠 Engineering Highlights
--Secure key lifecycle design (revoke-only policy)
--Clean separation using Blueprints
--ISO datetime serialization for frontend safety
--Defensive JS architecture with null guards
--Confirmation modals for destructive actions
-
----
