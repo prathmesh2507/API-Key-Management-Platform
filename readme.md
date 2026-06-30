@@ -64,27 +64,3 @@ devgate/
 ```
 
 ---
-
-## ⚙️ How to Run Locally
-
-- 1️⃣ Clone repository
-     - git clone https://github.com/prathmesh2507/API-Key-Management-Platform.git
-     - cd devgate
-
-- 2️⃣ Install dependencies
-     - pip install -r requirements.txt
-
-- 3️⃣ Start server
-     - python run.py
-
-- Visit: http://127.0.0.1:5000
----
-
-## 📸 Screenshots
----
-### Dashboard
-![alt text](assets/dashboard.png)
-
-### Architecture Overview
-![alt text](assets/architecture_overview.png)
-
