@@ -22,27 +22,3 @@ It demonstrates practical backend engineering concepts used in real API platform
 ---
 
 
-=======
-## 🎯 Key Features
-
-- 🔑 API key generation (secure random keys)
-- 🚫 Permanent key revocation (non-reversible)
-- ⏳ Expiration control
-- 🚦 Rate limiting per key
-- 📈 Usage analytics (total calls, 24h usage, most-used endpoint)
-- 📝 API request logging
-- 👤 Multi-user JWT authentication
-- 💻 Modern SaaS-style dashboard (HTML/CSS/JS)
-
----
-
-## 🛠️ Tech Stack
-
-- **Backend:** Flask (App Factory Pattern)
-- **Database:** MongoDB
-- **Auth:** JWT (Header-based)
-- **Frontend:** HTML, CSS (Glass UI), Vanilla JS
-- **Tools:** Git, VS Code
-
----
-
